@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: petclinic-components
+  description: A collection of components required by Spring Petclinic
+spec:
+  targets:
+    - ./database.yaml
+    - ./group.yaml
+    - ./server.yaml
+    - ./system.yaml

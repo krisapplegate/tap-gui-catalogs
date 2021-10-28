@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: petclinic-db
+  description: Petclinic DB
+  tags:
+    - sql
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=petclinic-db'
+spec:
+  type: database
+  owner: spring-devs
+  system: petclinic

@@ -1,0 +1,108 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: petclinic
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: db-storage
+  labels:
+    type: local
+spec:
+  storageClassName: manual
+  capacity:
+    storage: 5G
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: '/mnt/data'
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: db-storage-claim
+  namespace: petclinic
+spec:
+  storageClassName: manual
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5G
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: petclinic-db-config
+  namespace: petclinic
+data:
+  MYSQL_DATABASE: petclinic
+  MYSQL_PASSWORD: testpass
+  MYSQL_ROOT_PASSWORD: pass1234
+  MYSQL_USER: admin
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: msyql
+  namespace: petclinic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      petclinic-component: db
+  template:
+    metadata:
+      labels:
+        'app.kubernetes.io/part-of': petclinic-db
+        petclinic-component: db
+    spec:
+      containers:
+        - image: harbor-repo.vmware.com/dockerhub-proxy-cache/library/mysql@sha256:60ed6f5a97819f355de765729be957d821694cfa1a45c5f49ef8f96256a8bf9d
+          name: mysql
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: petclinic-db-config
+          ports:
+            - containerPort: 3306
+              name: mysql
+          volumeMounts:
+            - name: mysql-persistent-storage
+              mountPath: /var/lib/mysql 
+      volumes:
+        - name: mysql-persistent-storage
+          persistentVolumeClaim:
+            claimName: db-storage-claim
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-svc
+  namespace: petclinic
+spec:
+  selector:
+    petclinic-component: db
+  ports:
+    - port: 3306
+---
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: petclinic
+  namespace: petclinic
+  labels:
+    'app.kubernetes.io/part-of': petclinic-server
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/minScale: "2"
+      labels:
+        'app.kubernetes.io/part-of': petclinic-server
+    spec:
+      containers:
+        - image: harbor-repo.vmware.com/dockerhub-proxy-cache/springcommunity/spring-framework-petclinic@sha256:0e9295cd3a28c54f716c28aa1f5ba46ae7f1233e9655b062133913774d76d2b0
