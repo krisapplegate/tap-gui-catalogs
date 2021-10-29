@@ -8,6 +8,7 @@ metadata:
 spec:
   targets:
     - ./components/yelb-ui/yelb-ui.yaml
+    - ./components/yelb-ui/api.yaml
     - ./components/redis-server/redis-server.yaml
     - ./components/yelb-db/yelb-db.yaml
     - ./components/yelb-appserver/yelb-appserver.yaml
