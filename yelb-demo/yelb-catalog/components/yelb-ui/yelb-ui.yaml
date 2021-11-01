@@ -16,16 +16,5 @@ spec:
   type: service
   lifecycle: experimental
   owner: team-a
-  system: test1
+  system: yelb
   dependsOn: [Component:yelb-appserver]
----
-apiVersion: backstage.io/v1alpha1
-kind: System
-metadata:
-  name: test1
-  description: YELB Application
-  annotations:
-    'backstage.io/techdocs-ref': dir:.
-spec:
-  owner: team-a
-
