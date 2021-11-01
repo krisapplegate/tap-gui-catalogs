@@ -17,4 +17,4 @@ spec:
   lifecycle: experimental
   owner: team-a
   system: 
-  dependsOn: [Component:yelb-appserver]
+  dependsOn:
