@@ -9,12 +9,4 @@ spec:
   type: service
   lifecycle: development
   owner: guest
-  system: test
----
-apiVersion: backstage.io/v1alpha1
-kind: System
-metadata:
-  name: test
-  description: 
-spec:
-  owner: guest
+
