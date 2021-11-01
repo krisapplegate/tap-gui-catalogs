@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test
-  description: <DESCRIPTION>
+  description: Description
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=test'
 spec:
