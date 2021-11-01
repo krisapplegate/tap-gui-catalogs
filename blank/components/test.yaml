@@ -8,5 +8,5 @@ metadata:
 spec:
   type: service
   lifecycle: development
-  owner: guest
+  owner: default-team
 
