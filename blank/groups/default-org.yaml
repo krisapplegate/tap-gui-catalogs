@@ -24,4 +24,4 @@ metadata:
 spec:
   targets:
     - ./default-team.yaml
-#    - ./default-user.yaml
+    - ./default-user.yaml
