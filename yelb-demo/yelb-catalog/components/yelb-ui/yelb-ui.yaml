@@ -28,4 +28,4 @@ metadata:
     'backstage.io/techdocs-ref': dir:.
 spec:
   owner: team-a
-  domain: cloud-apps
+
