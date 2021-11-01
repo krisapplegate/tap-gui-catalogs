@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test
+  description: <DESCRIPTION>
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=test'
+spec:
+  type: service
+  lifecycle: development
+  owner: guest
+  system: test
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: test
+  description: 
+spec:
+  owner: guest
