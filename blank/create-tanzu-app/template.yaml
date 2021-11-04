@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1beta2
 kind: Template
 metadata:
-  name: create-react-app-template
-  title: Create React App Template
-  description: Create a new CRA website project
+  name: create-Tanzu-app-template
+  title: Create Tanzu App Template
+  description: Create a new TAP Application
   tags:
-    - react
-    - cra
+    - knative
+    - tap-1.0
 spec:
   owner: web@example.com
   type: website
