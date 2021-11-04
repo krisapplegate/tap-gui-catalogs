@@ -12,3 +12,4 @@ spec:
     - ./groups/default-org.yaml
     - ./systems/backstage-system.yaml
     - ./domains/backstage-domain.yaml
+    - ./create-tanzu-app/template.yaml
