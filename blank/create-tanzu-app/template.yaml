@@ -6,7 +6,7 @@ metadata:
   description: Create a new TAP Application
   tags:
     - knative
-    - tap-1.0
+    - tap
 spec:
   owner: web@example.com
   type: website
