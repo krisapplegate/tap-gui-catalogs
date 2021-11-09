@@ -8,5 +8,5 @@ metadata:
 spec:
   type: service
   lifecycle: development
-  owner: default-team
+  owner: team-a
 
