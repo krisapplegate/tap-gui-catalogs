@@ -9,4 +9,3 @@ spec:
   type: service
   lifecycle: development
   owner: team-a
-  system: tanzu-java-web-app
