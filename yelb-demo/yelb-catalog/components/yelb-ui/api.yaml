@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: yelb-ui
-  description: The yeklb-ui API
+  name: yelb-app
+  description: The yelb-app API
   tags:
     - store
     - rest
