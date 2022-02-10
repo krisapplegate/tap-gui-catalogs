@@ -19,4 +19,4 @@ spec:
   system: yelb
   dependsOn: [Component:yelb-appserver]
   providesApis:
-    - yelb-ui
+    - yelb-app
