@@ -13,3 +13,5 @@ spec:
   lifecycle: experimental
   owner: team-a
   system: yelb
+  providesApis:
+    - yelb-app
