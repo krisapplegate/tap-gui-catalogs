@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: tap-gui-catalog-info
+  description: A sample catalog for Backstage
+  annotations:
+spec:
+  targets:
+    - ./tap-gui-package.yaml
+    - ./tap-gui-system.yaml
