@@ -3,8 +3,6 @@ kind: API
 metadata:
   name: tap-gui-package
   description: The tap-gui package API
-  tags:
-    - yaml
   links:
     - url: https://github.com/swagger-api/swagger-petstore
       title: Package Definition
