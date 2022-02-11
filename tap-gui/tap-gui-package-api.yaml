@@ -15,8 +15,7 @@ spec:
   definition: |
     openapi: "3.0.0"
     title: Tanzu Application Platform GUI Configuration Schema
-      description: |
-        This is the schema describing the structure of the Tanzu Application
+      description:         This is the schema describing the structure of the Tanzu Application
         Platform GUI config, including the structure of the Backstage
         app-config.yml file.
       properties:
