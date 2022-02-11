@@ -8,3 +8,4 @@ spec:
   targets:
     - ./tap-gui-package.yaml
     - ./tap-gui-system.yaml
+    - ./tap-gui-package-api.yaml
