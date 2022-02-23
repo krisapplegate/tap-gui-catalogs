@@ -38,7 +38,3 @@ spec:
                   schema:
                     type: string
                   examples: {}
-          servers:
-            - url: https://api.agify.io
-        servers:
-          - url: https://api.agify.io
