@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: api-test
-  description: 
+  description: api-test
 spec:
   type: openapi
   lifecycle: experimental
