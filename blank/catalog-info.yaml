@@ -8,7 +8,6 @@ metadata:
 spec:
   targets:
     - ./components/backstage.yaml
-    - ./components/test.yaml
     - ./groups/default-org.yaml
     - ./systems/backstage-system.yaml
     - ./domains/backstage-domain.yaml
