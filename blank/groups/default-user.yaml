@@ -7,7 +7,7 @@ spec:
     displayName: Default User
     email: guest@example.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf: [development]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -18,7 +18,7 @@ spec:
     displayName: Kris Applegate
     email: kapplegate@vmware.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf: [development]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -29,7 +29,7 @@ spec:
     displayName: Andrei Zimin
     email: zimina@vmware.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf: [development]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -40,7 +40,7 @@ spec:
     displayName: Michael Stergianis
     email: mstergianis@vmware.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf: [development]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -51,7 +51,7 @@ spec:
     displayName: Jamie Klassen
     email: jklassen@vmware.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf: [development]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -62,7 +62,7 @@ spec:
     displayName: Waldir Montoya
     email: zimina@vmware.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf: [development]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -73,4 +73,4 @@ spec:
     displayName: Scott Sissil
     email: ssisil@vmware.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
-  memberOf: [default-team]
+  memberOf: [development]
