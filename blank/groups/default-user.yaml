@@ -71,7 +71,7 @@ metadata:
 spec:
   profile:
     displayName: Waldir Montoya
-    email: zimina@vmware.com
+    email: wmontoya@vmware.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
   memberOf: [development]
 ---
