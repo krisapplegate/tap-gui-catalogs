@@ -30,3 +30,47 @@ spec:
     email: zimina@vmware.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
   memberOf: [default-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: mstergianis
+spec:
+  profile:
+    displayName: Michael Stergianis
+    email: mstergianis@vmware.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [default-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jklassen
+spec:
+  profile:
+    displayName: Jamie Klassen
+    email: jklassen@vmware.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [default-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: wmontoya
+spec:
+  profile:
+    displayName: Waldir Montoya
+    email: zimina@vmware.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [default-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: ssisil
+spec:
+  profile:
+    displayName: Scott Sissil
+    email: ssisil@vmware.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [default-team]
