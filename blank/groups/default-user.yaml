@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: kapplegate@vmware.com
+  name: kapplegate
 spec:
   profile:
     displayName: Kris Applegate
