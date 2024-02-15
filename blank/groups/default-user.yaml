@@ -129,3 +129,14 @@ spec:
     email: guest@example.com
     picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
   memberOf: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: andy-a.nguyen
+spec:
+  profile:
+    displayName: Andy Nguyen
+    email: andy-a.nguyen@broadcom.com
+    picture: https://avatars.dicebear.com/api/avataaars/guest@example.com.svg?background=%23fff
+  memberOf: [development]
